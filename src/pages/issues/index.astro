@@ -9,7 +9,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 const issues = (await getCollection('issues')).sort(
 	(a, b) => parseInt(a.data.issue).valueOf() - parseInt(b.data.issue).valueOf(),
 );
-console.log(issues)
 ---
 
 <!doctype html>
