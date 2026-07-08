@@ -1,17 +1,17 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
+import HeadMetadata from '../components/HeadMetadata.astro';
 import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'issues'>['data'];
 
-const { issue, summary, date, coverSrc } = Astro.props;
+const { issue, summary, coverSrc } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={issue} description={summary} />
+		<HeadMetadata title=`White Dwarf ${issue}` description={summary} />
 		<style>
 			main {
 				width: calc(100% - 2em);

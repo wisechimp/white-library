@@ -1,14 +1,9 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import RootLayout from "../layouts/RootLayout.astro"
 ---
 
-<Layout
-	title="Disclaimer"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
+<RootLayout>
+	<h1>Disclaimer</h1>
 	<p>
 		This web site is completely unofficial and in no way endorsed by Games Workshop Limited.
 	</p>
@@ -20,4 +15,4 @@ import Layout from '../layouts/BlogPost.astro';
 	<p>
 		Now please <a href="/">return</a> to the fun part of the website!
 	</p>
-</Layout>
+</RootLayout>

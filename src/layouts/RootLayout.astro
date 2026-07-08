@@ -1,0 +1,17 @@
+---
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import HeadMetadata from '../components/HeadMetadata.astro'
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts'
+import '../styles/global.css'
+---
+<html lang="en">
+  <head>
+    <HeadMetadata title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
